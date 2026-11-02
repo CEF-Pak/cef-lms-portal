@@ -1,0 +1,89 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@font-face {
+  font-family: "aileron";
+  src: url("./assets/fonts/aileron.otf");
+}
+
+@font-face {
+  font-family: "aileron2";
+  src: url("./assets/fonts/aileron2.otf");
+}
+
+:root {
+  --font-aileron: "aileron";
+  --background-color: #f5f6f8;
+}
+
+@theme {
+  --color-primary: #8abe41;
+  --color-secondary: #0a3a75;
+  --color-secondary-500: #173364;
+  --color-tertiary: #e9edf4;
+  --font-aileron: "aileron";
+  --font-aileron2: "aileron2";
+}
+
+body {
+  font-family: var(--font-aileron);
+  letter-spacing: 0.02rem;
+  background-color: var(--background-color);
+}
+
+.navbar-link {
+  @apply text-sm font-medium text-black uppercase hover:text-secondary;
+}
+
+.search {
+  @apply pr-10 rounded-full border border-tertiary;
+}
+
+.swiper-pagination-bullet-active{
+  @apply !bg-secondary;
+}
+
+tr.rdp-weekdays, tr.rdp-week {
+  display: flex !important;
+  justify-content: space-around;
+}
+
+tr.rdp-week td{
+  gap: 1rem;
+}
+
+.react-tel-input {
+  margin-top: 0.15rem;
+}
+
+.css-b62m3t-container {
+  margin-top: 0.15rem;
+}
+
+.css-13cymwt-control{
+  border-color: #d1d5db !important;
+  border-radius: 0.3rem !important;
+}
+
+.css-t3ipsp-control{
+  border-color: #d1d5db !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.css-t3ipsp-control:focus{
+  border-color: #d1d5db !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+#sessionContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.react-tel-input .form-control {
+  height: 38px !important;
+}
